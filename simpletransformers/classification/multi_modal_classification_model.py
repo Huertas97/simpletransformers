@@ -945,7 +945,7 @@ class MultiModalClassificationModel:
 
     def eval_model(
         self,
-        eval_data,
+        data, # eval_data,
         files_list=None,
         image_path=None,
         text_label=None,
