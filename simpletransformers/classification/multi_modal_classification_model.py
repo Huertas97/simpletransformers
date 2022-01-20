@@ -4,6 +4,7 @@
 
 from __future__ import absolute_import, division, print_function
 
+import pickle
 import json
 import logging
 import math
