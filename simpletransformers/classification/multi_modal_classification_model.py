@@ -609,10 +609,6 @@ class MultiModalClassificationModel:
                     outputs = model(**inputs)
                     # model outputs are always tuple in pytorch-transformers (see doc)
                     logits = outputs[0]  # Different from default behaviour
-                    print("Yo, logits -->", logits)
-                    print("Yo, labels -->", labels)
-                    loss = self.criterion(logits, labels)
-                    print("Yo, loss", loss)
 
                 if args.n_gpu > 1:
                     loss = (
