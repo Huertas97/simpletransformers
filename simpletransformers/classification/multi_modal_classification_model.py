@@ -614,7 +614,11 @@ class MultiModalClassificationModel:
                     loss = (
                         loss.mean()
                     )  # mean() to average on multi-gpu parallel training
-
+                
+                print("Yo, loss type", type(loss))
+                print("Yo", loss)
+                print("Yo, loss[0]", loss[0])
+                
                 current_loss = loss.item()
 
                 if show_running_loss:
