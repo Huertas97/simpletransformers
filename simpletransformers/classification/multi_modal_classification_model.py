@@ -619,6 +619,9 @@ class MultiModalClassificationModel:
                 print("Yo", loss)
                 print("Yo, loss[0]", loss[0])
                 
+                with open("./loss.pkl", "wb") as f:
+                    pickle.dump(f, loss)
+                
                 current_loss = loss.item()
 
                 if show_running_loss:
